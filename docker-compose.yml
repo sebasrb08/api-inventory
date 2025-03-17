@@ -9,6 +9,9 @@ services:
       SPRING_DATASOURCE_URL: jdbc:mysql://inventario:3306/gestion_inventario?createDatabaseIfNotExist=true&serverTimezone=UTC
       SPRING_DATASOURCE_USERNAME: root
       SPRING_DATASOURCE_PASSWORD: 12345678
+      CLOUDINARY_NAME: dykuuunmh
+      CLOUDINARY_API_KEY: 575898854961468
+      CLOUDINARY_API_SECRET: kgGNXoOqan5L4iCbNiuLcNY-tmg
     restart: always
     depends_on:
       inventario:

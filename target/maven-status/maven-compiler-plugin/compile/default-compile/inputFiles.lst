@@ -1,11 +1,13 @@
 C:\Users\sebas\Documents\Programacion\SPRINGBOOT\inventario\src\main\java\Inventario\Application.java
 C:\Users\sebas\Documents\Programacion\SPRINGBOOT\inventario\src\main\java\Inventario\config\ApplicationConfig.java
+C:\Users\sebas\Documents\Programacion\SPRINGBOOT\inventario\src\main\java\Inventario\config\CloudinaryConfig.java
 C:\Users\sebas\Documents\Programacion\SPRINGBOOT\inventario\src\main\java\Inventario\config\SecurityConfig.java
 C:\Users\sebas\Documents\Programacion\SPRINGBOOT\inventario\src\main\java\Inventario\controller\AuthController.java
 C:\Users\sebas\Documents\Programacion\SPRINGBOOT\inventario\src\main\java\Inventario\controller\CategoriaController.java
 C:\Users\sebas\Documents\Programacion\SPRINGBOOT\inventario\src\main\java\Inventario\controller\ClienteController.java
 C:\Users\sebas\Documents\Programacion\SPRINGBOOT\inventario\src\main\java\Inventario\controller\CompraController.java
 C:\Users\sebas\Documents\Programacion\SPRINGBOOT\inventario\src\main\java\Inventario\controller\DetalleProductoController.java
+C:\Users\sebas\Documents\Programacion\SPRINGBOOT\inventario\src\main\java\Inventario\controller\FileUploadController.java
 C:\Users\sebas\Documents\Programacion\SPRINGBOOT\inventario\src\main\java\Inventario\controller\ProductoController.java
 C:\Users\sebas\Documents\Programacion\SPRINGBOOT\inventario\src\main\java\Inventario\Dto\AuthResponse.java
 C:\Users\sebas\Documents\Programacion\SPRINGBOOT\inventario\src\main\java\Inventario\Dto\CompraDto.java
@@ -33,11 +35,13 @@ C:\Users\sebas\Documents\Programacion\SPRINGBOOT\inventario\src\main\java\Invent
 C:\Users\sebas\Documents\Programacion\SPRINGBOOT\inventario\src\main\java\Inventario\service\ClienteService.java
 C:\Users\sebas\Documents\Programacion\SPRINGBOOT\inventario\src\main\java\Inventario\service\CompraService.java
 C:\Users\sebas\Documents\Programacion\SPRINGBOOT\inventario\src\main\java\Inventario\service\DetalleProductoService.java
+C:\Users\sebas\Documents\Programacion\SPRINGBOOT\inventario\src\main\java\Inventario\service\FileUploadService.java
 C:\Users\sebas\Documents\Programacion\SPRINGBOOT\inventario\src\main\java\Inventario\service\Imp\AuthService.java
 C:\Users\sebas\Documents\Programacion\SPRINGBOOT\inventario\src\main\java\Inventario\service\Imp\CategoriaServiceImp.java
 C:\Users\sebas\Documents\Programacion\SPRINGBOOT\inventario\src\main\java\Inventario\service\Imp\ClienteServiceImp.java
 C:\Users\sebas\Documents\Programacion\SPRINGBOOT\inventario\src\main\java\Inventario\service\Imp\CompraServiceImp.java
 C:\Users\sebas\Documents\Programacion\SPRINGBOOT\inventario\src\main\java\Inventario\service\Imp\DetalleProdcutoServiceImp.java
+C:\Users\sebas\Documents\Programacion\SPRINGBOOT\inventario\src\main\java\Inventario\service\Imp\FileUploadServiceImpl.java
 C:\Users\sebas\Documents\Programacion\SPRINGBOOT\inventario\src\main\java\Inventario\service\Imp\ProductoServiceImp.java
 C:\Users\sebas\Documents\Programacion\SPRINGBOOT\inventario\src\main\java\Inventario\service\Imp\UsuarioServiceImp.java
 C:\Users\sebas\Documents\Programacion\SPRINGBOOT\inventario\src\main\java\Inventario\service\ProductoService.java

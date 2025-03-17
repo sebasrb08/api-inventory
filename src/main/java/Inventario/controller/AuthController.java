@@ -19,7 +19,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 @RestController
 @RequestMapping("/auth")
 @RequiredArgsConstructor
-@CrossOrigin(origins = {"http://localhost:8081","exp://192.168.80.10:8081"})
 public class AuthController {
 
     private final AuthService authservice; 

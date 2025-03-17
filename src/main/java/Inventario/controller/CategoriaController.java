@@ -27,8 +27,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 @RequestMapping("/categoria")
 @RestController
-@CrossOrigin(origins = {"http://localhost:8081","exp://192.168.80.10:8081"})
-
 public class CategoriaController {
 
 

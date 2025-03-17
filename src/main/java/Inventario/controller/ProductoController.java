@@ -33,7 +33,6 @@ import Inventario.util.CurrentUserUtil;
 
 @RestController
 @RequestMapping("/producto")
-@CrossOrigin(origins = {"http://localhost:8081","exp://192.168.80.10:8081"})
 
 public class ProductoController {
     @Autowired
@@ -83,7 +82,6 @@ public class ProductoController {
                     .precio(productoDto.getPrecio())
                     .descripcion(productoDto.getDescripcion())
                     .categoria(categoria.get())  // Manejo de posibles excepciones
-                    .image(productoDto.getImage())
                     .usuario(usuario.get())  // Manejo de posibles excepciones
                     .build();
                 return new ResponseEntity<>(productoService.saveProduct(producto), HttpStatus.OK);
@@ -119,44 +117,5 @@ public class ProductoController {
         long userId = currentUserUtil.getCurrentId();
 
         return new ResponseEntity<>(productoService.deleteProduct(id,userId),HttpStatus.OK);
-    }
-
-    @GetMapping("/image/{imageName}")
-    public ResponseEntity<String> getImageUrl(@PathVariable String imageName) {
-        try {
-            // Construir la URL completa para la imagen
-            String imageUrl = "http://192.168.80.19:8080/images/" + imageName;
-            return ResponseEntity.ok(imageUrl); // Devolver la URL como un String
-        } catch (Exception e) {
-            e.printStackTrace();
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build(); // Si ocurre algún error
-        }
-    }    
-    @PostMapping("/uploadImage")
-    public ResponseEntity<String> uploadImage(@RequestParam("file") MultipartFile file) {
-        if (file.isEmpty()) {
-            return new ResponseEntity<>("No file uploaded", HttpStatus.BAD_REQUEST);
-        }
-
-        try {
-            // Definir la ruta de almacenamiento
-            Path directorioImagenes = Paths.get("src/main/resources/static/images");
-            String rutaAbsoluta = directorioImagenes.toFile().getAbsolutePath();
-            Files.createDirectories(directorioImagenes);
-
-            // Generar un nombre único para evitar sobrescribir
-            String nombreImagen = System.currentTimeMillis() + "_" + file.getOriginalFilename();
-            Path rutaCompleta = Paths.get(rutaAbsoluta + "/" + nombreImagen);
-
-            // Guardar la imagen
-            byte[] bytesImg = file.getBytes();
-            Files.write(rutaCompleta, bytesImg);
-
-            // Devolver el nombre de la imagen o URL
-            return new ResponseEntity<>(nombreImagen, HttpStatus.OK);
-
-        } catch (IOException e) {
-            return new ResponseEntity<>("Error saving file", HttpStatus.INTERNAL_SERVER_ERROR);
-        }
     }
 }
