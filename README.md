@@ -1,4 +1,4 @@
-Sistema de gestion de inventario
+# Sistema de gestion de inventario
 
 ## Descripción
 
